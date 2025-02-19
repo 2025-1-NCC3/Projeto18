@@ -1,4 +1,4 @@
-# UberShield - Segurança, Praticisade e Conforto.
+# UberShield - Segurança, Praticidade e Conforto.
 🚖 Segurança no Transporte - Grupo18
 
 
