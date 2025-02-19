@@ -1,8 +1,10 @@
-# UBERisk-map
+# UberShield - Segurança, Praticisade e Conforto.
 🚖 Segurança no Transporte - Grupo18
 
 📌 Descrição
-O UBERisk-map é uma solução mobile desenvolvida para aumentar a segurança de passageiros e motoristas durante viagens. A plataforma utiliza mapeamento de riscos e funcionalidades inteligentes para alertar sobre áreas perigosas e garantir uma experiência mais segura no transporte urbano.
+UberShield - Segurança, Praticidade e Conforto é uma solução mobile inovadora projetada para aumentar a proteção de passageiros e motoristas durante suas viagens. A plataforma utiliza um avançado sistema de mapeamento de riscos e inteligência artificial para identificar áreas potencialmente perigosas, permitindo uma experiência de transporte mais segura e tranquila.
+
+Com foco em segurança e praticidade, o UberShield oferece funcionalidades inteligentes que ajudam a prevenir incidentes, proporcionando mais confiança e comodidade a todos os usuários.
 
 🛠 Tecnologias Utilizadas
 JavaScript
@@ -15,26 +17,58 @@ O objetivo é criar uma solução mobile que garanta maior segurança tanto para
 
 -Raiz
 |
-|--> documentos       # Arquivos de documentação
-|--> executáveis      # Binários e apps para instalação
-|    |--> android
+|--> documentos
+|    |--> antigos
+|    |    Documentação.docx
+|
+|--> executáveis
 |    |--> windows
+|    |--> android
 |    |--> HTML
-|--> imagens         # Recursos visuais do sistema
-|--> src            # Código-fonte do projeto
+|
+|--> imagens
+|
+|--> src
 |    |--> Backend
 |    |--> Frontend
-|--> README.md       # Este arquivo de apresentação
+|
+| README.md
 
-🚀 Como Rodar o Projeto
-🔹 Android
-Baixe o arquivo UBERisk.apk no seu celular.
-Execute o APK e siga as instruções de instalação.
-🔹 Windows
-Encontre o UBERisk.exe na pasta executáveis.
-Clique duas vezes para abrir o programa.
-🔹 HTML/Web
-Abra o index.html localizado na pasta executáveis em qualquer navegador.
+🔹 README.md: Guia geral do projeto.
+🔹 documentos/: Armazena toda a documentação do sistema.
+🔹 executáveis/: Contém binários e arquivos para instalação.
+🔹 imagens/: Pasta destinada a imagens do sistema.
+🔹 src/: Contém o código-fonte, separado em Backend e Frontend.
+
+🛠 Instalação
+📱 Android
+Faça o download do arquivo UberShield.apk em seu celular.
+Execute o APK e siga as instruções na tela.
+
+💻 Windows
+Não há necessidade de instalação!
+Encontre o arquivo UberShield.exe na pasta executáveis/windows e execute-o normalmente.
+🌍 HTML (Versão Web)
+
+Encontre o arquivo index.html na pasta executáveis/HTML.
+Abra-o em qualquer navegador para acessar a versão web.
+
+⚙️ Configuração para Desenvolvimento
+Requisitos:
+Node.js
+NPM ou Yarn
+Framework Frontend (React, React Native)
+Banco de dados (MongoDB, Firebase ou outro)
+
+COMANDOS:
+# Instalar dependências
+npm install
+
+# Rodar o projeto em ambiente de desenvolvimento
+npm start
+
+# Rodar testes
+npm test
 
 🎓 Professores Orientadores
 Marco Aurelio Lima Barbosa
@@ -43,11 +77,8 @@ Vinicius Heltai Pacheco
 Victor Bruno Alexander Rosetti de Quiroz
 
 📜 Licença
-Este projeto está licenciado sob a licença CC BY-SA 3.0. Para mais detalhes, consulte o arquivo LICENSE ou visite Creative Commons.
+Este projeto está licenciado sob a licença CC BY 4.0. Para mais informações, acesse Creative Commons.
 
-📌 Referências
-GitHub README Template
-Modelo de README
-Creative Commons Licença
+🎓 Referências
 
 
