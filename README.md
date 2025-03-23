@@ -11,7 +11,7 @@ Com foco em segurança e praticidade, o UberShield oferece funcionalidades intel
 - Arthur Ferreira | RA 23751908 | Perfil LinkedIn: 
 - Gabriel Marussi | RA 23751908 | Perfil Linkedin:
 - Israel | RA 23751908 | Perfil LinkedIn:
-- [**Nicolly da Silva Soares**](www.linkedin.com/in/nicolly-silva-soares-10b627171) | RA 23751908 | E-mail: 
+- [**Nicolly da Silva Soares**](https://www.linkedin.com/in/nicolly-silva-soares-10b627171) | RA 23751908 | E-mail: nickysil318@gmail.com 
 
 # 📂 Estrutura do Projeto
 ```
