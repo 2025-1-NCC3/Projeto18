@@ -8,9 +8,9 @@ UberShield - Segurança, Praticidade e Conforto é uma solução mobile inovador
 Com foco em segurança e praticidade, o UberShield oferece funcionalidades inteligentes que ajudam a prevenir incidentes, proporcionando mais confiança e comodidade a todos os usuários.
 
 # Integrantes do Projeto
-- Arthur Ferreira | RA 23751908 | Perfil LinkedIn: 
-- Gabriel Marussi | RA 23751908 | Perfil Linkedin:
-- Israel | RA 23751908 | Perfil LinkedIn:
+- Arthur Ferreira | RA 23751908 | E-mail: 
+- Gabriel Marussi | RA 23751908 | E-mail: 
+- Israel | RA 23751908 | E-mail: 
 - [**Nicolly da Silva Soares**](https://www.linkedin.com/in/nicolly-silva-soares-10b627171) | RA 23751908 | E-mail: nickysil318@gmail.com 
 
 # 📂 Estrutura do Projeto
@@ -44,8 +44,6 @@ Com foco em segurança e praticidade, o UberShield oferece funcionalidades intel
 - CodeSandBox: (Autenticação de usuários e integração com o banco de dados). 
   
 - API Google Maps: (Análise do mapa e sugestão das rotas mais seguras, além de informar o pasageiro e motorista das zonas de perigo). 
-  
-- API Uber: (Integração com o serviço de viagens para referencia dentro do app). 
 
 
 # 🛡️ Funcionalidades do UberShield
@@ -80,4 +78,5 @@ Este projeto está licenciado sob a licença CC BY 4.0. Para mais informações,
 
 # 🎓 Referências
 1. GOVERNO FEDERAL. Registro Nacional de Infração de Trânsito - RENAINF. Disponível em: https://dados.gov.br/dados/conjuntos-dados/registro-nacional-de-infracoes-de-transito-renainf.  Acesso em: 23 mar. 2025. | (Análise Descritiva de Dados)
+2. GOOGLE. Console Cloud. Disponível em: https://console.cloud.google.com/. Acesso em: 23 mar. 2025. | (API do Google)
 
