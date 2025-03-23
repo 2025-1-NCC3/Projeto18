@@ -9,10 +9,9 @@ Com foco em segurança e praticidade, o UberShield oferece funcionalidades intel
 
 # Integrantes do Projeto
 - Arthur Ferreira | RA 23751908 | E-mail: 
-- Gabriel Marussi | RA 23751908 | E-mail: 
+- [**Gabriel Marussi**](https://www.linkedin.com/in/gabrielmarussi/) | RA 24026609 | E-mail: gabriel.marussi@edu.fecap.br
 - Israel | RA 23751908 | E-mail: 
-- [**Nicolly da Silva Soares**](https://www.linkedin.com/in/nicolly-silva-soares-10b627171) | RA 23751908 | E-mail: nickysil318@gmail.com 
-
+- [**Nicolly da Silva Soares**](https://www.linkedin.com/in/nicolly-silva-soares-10b627171) | RA 23751908 | E-mail: nicolly.soares@edu.fecap.br
 # 📂 Estrutura do Projeto
 ```
 -Raiz
