@@ -8,9 +8,9 @@ UberShield - Segurança, Praticidade e Conforto é uma solução mobile inovador
 Com foco em segurança e praticidade, o UberShield oferece funcionalidades inteligentes que ajudam a prevenir incidentes, proporcionando mais confiança e comodidade a todos os usuários.
 
 # Integrantes do Projeto
-- Arthur Ferreira | RA 23751908 | E-mail: 
+- Arthur Ferreira | RA 24026567 | E-mail: ferreira.arthur@edu.fecap.br
 - [**Gabriel Marussi**](https://www.linkedin.com/in/gabrielmarussi/) | RA 24026609 | E-mail: gabriel.marussi@edu.fecap.br
-- Israel | RA 23751908 | E-mail: 
+- Israel Ribeiro | RA 24026181 | E-mail: israelribeiropessoal@gmail.com
 - [**Nicolly da Silva Soares**](https://www.linkedin.com/in/nicolly-silva-soares-10b627171) | RA 23751908 | E-mail: nicolly.soares@edu.fecap.br
 # 📂 Estrutura do Projeto
 ```
