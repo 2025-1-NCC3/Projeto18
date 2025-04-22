@@ -1,0 +1,12 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Tema principal do aplicativo (Modo Claro) -->
+    <style name="Theme.UberShield" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">#FFFFFF</item>
+        <item name="colorPrimaryVariant">#F1F1F1</item>
+        <item name="colorOnPrimary">#000000</item>
+        <item name="colorSecondary">#1DB954</item>
+        <item name="colorOnSecondary">#FFFFFF</item>
+        <item name="android:statusBarColor">#FFFFFF</item>
+        <item name="android:windowBackground">#F5F5F5</item>
+    </style>
+</resources>
