@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:background="#FFFFFF">
+
+    <!-- Botão de voltar -->
+    <ImageView
+        android:id="@+id/back_button"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/ic_back"
+        android:contentDescription="Voltar"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- Título centralizado -->
+    <TextView
+        android:id="@+id/textViewTituloTopo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Conta UberShield"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Texto "E-mail" -->
+    <TextView
+        android:id="@+id/textViewTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="E-mail"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTituloTopo"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="24dp" />
+
+    <!-- Subtítulo -->
+    <TextView
+        android:id="@+id/textViewSubtitulo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Este é o e-mail que você quer atribuir sua conta UberShield."
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTitulo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Campo de texto de e-mail -->
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:hint="Digite seu e-mail"
+        android:text="antonio.alvares@email.com"
+        android:inputType="textEmailAddress"
+        android:background="@drawable/bg_edittext"
+        android:padding="12dp"
+        android:drawableEnd="@drawable/ic_close"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSubtitulo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp" />
+
+    <!-- Botão Atualizar -->
+    <Button
+        android:id="@+id/btnAtualizar"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:text="Atualizar"
+        android:backgroundTint="#E0E0E0"
+        android:textColor="#000000"
+        app:layout_constraintTop_toBottomOf="@+id/editTextEmail"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
