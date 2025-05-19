@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/UberShield.iml" filepath="$PROJECT_DIR$/.idea/modules/UberShield.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/UberShield.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/UberShield.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/UberShield.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/UberShield.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/UberShield.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/UberShield.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/UberShield.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/UberShield.app.unitTest.iml" />
+    </modules>
+  </component>
+</project>
