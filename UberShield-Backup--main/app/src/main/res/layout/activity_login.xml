@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    tools:context="br.fecap.pi.ubershield.FrontEnd.LoginActivity">
+
+    <!-- Logo -->
+    <FrameLayout
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/background_logo"
+        app:layout_constraintBottom_toTopOf="@+id/loginLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/logo_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/app_short_name"
+            android:textColor="@android:color/white"
+            android:fontFamily="@font/uber_move_medium"
+            android:textSize="45sp"
+            android:gravity="center" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/loginLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginBottom="100dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <EditText
+            android:id="@+id/Username"
+            style="@style/defaultText"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/background_white"
+            android:drawableStart="@drawable/icon_account_line"
+            android:elevation="2dp"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Usuário"
+            android:inputType="text"
+            android:paddingLeft="20dp"
+            android:paddingRight="40dp"
+            android:textColorHighlight="@android:color/darker_gray"
+            android:textColorHint="#B8000000"
+            android:translationZ="2dp"
+            tools:ignore="Autofill,HardcodedText" />
+
+        <EditText
+            android:id="@+id/RegisterSenha"
+            style="@style/defaultText"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/background_white"
+            android:drawableStart="@drawable/icon_password"
+            android:elevation="2dp"
+            android:ems="0"
+            android:gravity="center"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:paddingLeft="22dp"
+            android:paddingRight="42dp"
+            android:textAlignment="center"
+            android:textColorHighlight="@android:color/darker_gray"
+            android:textColorHint="#B8000000"
+            android:translationZ="2dp"
+            tools:layout_marginBottom="15dp"
+            tools:ignore="Autofill,HardcodedText"/>
+
+        <Button
+            android:id="@+id/login_btn"
+            style="@style/titleText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="100dp"
+            android:background="@drawable/background_black"
+            android:text="@string/login"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            app:backgroundTint="@null"
+            app:iconTint="@null" />
+
+        <Button
+            android:id="@+id/register_btn"
+            style="@style/defaultText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="#F5F5F5"
+            android:text="@string/register_prompt"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            app:backgroundTint="#F5F5F5" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
