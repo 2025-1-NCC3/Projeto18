@@ -1,62 +1,52 @@
-<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+<androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:theme="@style/Theme.UberShield"
     android:id="@+id/grupo_info_pessoal"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <!-- Ícone de voltar -->
-    <ImageButton
-        android:id="@+id/btnVoltar"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="24dp"
-        android:background="@drawable/icon_arrow_left"
-        android:contentDescription="Voltar"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <!-- Título superior -->
-
-    <!-- Imagem Usuário -->
     <TextView
         android:id="@+id/tituloConta"
         style="@style/titleText"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="48dp"
         android:gravity="center"
         android:text="Informações pessoais"
         android:textColor="#000000"
-        android:textSize="25sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/btnVoltar"
+        android:textSize="32sp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/imageButton3"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="100dp"
         android:src="@drawable/user_image"
         app:civ_border_color="#FF000000"
         app:civ_border_width="0dp"
-        app:civ_circle_background_color="#FFFFFF" />
+        app:civ_circle_background_color="#FFFFFF"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tituloConta" />
 
     <LinearLayout
+        android:id="@+id/linearLayoutContent"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
+        android:layout_height="0dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="200dp"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/footerLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton3"
+        app:layout_constraintVertical_bias="0.0">
 
         <RelativeLayout
             android:id="@+id/item_nome"
@@ -172,7 +162,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:text="+55 11 99999-9999"
+                    android:text="11 999999999"
                     android:textColor="#555" />
             </LinearLayout>
 
@@ -229,55 +219,181 @@
                 android:src="@drawable/icon_arrow_right" />
         </RelativeLayout>
 
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:layout_marginTop="10dp"
-            android:background="#E0E0E0" />
+        <!--
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="#E0E0E0" />
 
-        <RelativeLayout
-            android:id="@+id/item_idioma"
-            android:layout_width="match_parent"
-            android:layout_height="68dp"
-            android:layout_marginTop="16dp">
+    <RelativeLayout
+        android:id="@+id/item_idioma"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:layout_marginTop="16dp">
 
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:gravity="center_vertical"
-                android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
 
-                <TextView
-                    android:id="@+id/titulo_idioma"
-                    style="@style/titleText"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Idioma" />
-
-                <TextView
-                    android:id="@+id/valor_idioma"
-                    style="@style/defaultText"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:text="Atualizar idioma do dispositivo"
-                    android:textColor="#555" />
-            </LinearLayout>
-
-            <ImageView
+            <TextView
+                android:id="@+id/titulo_idioma"
+                style="@style/titleText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentEnd="true"
-                android:layout_centerVertical="true"
-                android:layout_marginEnd="16dp"
-                android:src="@drawable/icon_arrow_right" />
-        </RelativeLayout>
+                android:text="Idioma" />
+
+            <TextView
+                android:id="@+id/valor_idioma"
+                style="@style/defaultText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Atualizar idioma do dispositivo"
+                android:textColor="#555" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/icon_arrow_right" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="#E0E0E0" />
+        -->
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/footerLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="bottom|center_horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:elevation="10dp"
+        android:background="#F5F5F5"
+        android:fitsSystemWindows="true">
 
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
-            android:layout_marginTop="10dp"
-            android:background="#E0E0E0" />
-    </LinearLayout>
+            android:layout_marginBottom="10dp"
+            android:background="#DFDFDF" />
 
-</RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal">
+
+            <LinearLayout
+                android:id="@+id/homeButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:contentDescription="Página Inicial"
+                    app:srcCompat="@drawable/icon_home"
+                    app:tint="#717171" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Página Inicial"
+                    android:textColor="#717171"
+                    style="@style/minimumText"
+                    android:textSize="10sp"
+                    android:layout_marginBottom="10dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/configButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    app:srcCompat="@drawable/icon_option"
+                    android:contentDescription="Configurações"
+                    app:tint="#717171" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Opções"
+                    style="@style/minimumText"
+                    android:textColor="#717171"
+                    android:textSize="10sp"
+                    android:layout_marginBottom="10dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/activityButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    app:srcCompat="@drawable/icon_activity_grey"
+                    android:contentDescription="Atividades" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Atividades"
+                    style="@style/minimumText"
+                    android:textColor="#717171"
+                    android:textSize="10sp"
+                    android:layout_marginBottom="10dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/accountButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    app:srcCompat="@drawable/icon_account"
+                    android:contentDescription="Perfil" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Perfil"
+                    style="@style/minimumText"
+                    android:textColor="#000000"
+                    android:textSize="10sp"
+                    android:layout_marginBottom="10dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

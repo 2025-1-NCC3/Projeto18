@@ -64,7 +64,8 @@
             android:textColorHighlight="@android:color/darker_gray"
             android:textColorHint="#B8000000"
             android:translationZ="2dp"
-            tools:ignore="Autofill,HardcodedText" />
+            tools:ignore="Autofill,HardcodedText"
+            android:textIsSelectable="false"/>
 
         <EditText
             android:id="@+id/RegisterSenha"
@@ -87,7 +88,8 @@
             android:textColorHint="#B8000000"
             android:translationZ="2dp"
             tools:layout_marginBottom="15dp"
-            tools:ignore="Autofill,HardcodedText"/>
+            tools:ignore="Autofill,HardcodedText"
+            android:textIsSelectable="false"/>
 
         <Button
             android:id="@+id/login_btn"

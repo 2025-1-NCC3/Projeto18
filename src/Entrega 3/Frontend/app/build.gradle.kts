@@ -40,32 +40,24 @@ dependencies {
     implementation(libs.material)
     implementation(libs.activity)
     implementation(libs.constraintlayout)
-    implementation(libs.play.services.maps)
-    implementation(libs.volley)
-
-    //glr essa é a dependencia http do servidor, sem isso o banco n funciona, podem estranhar mas n tira nmral
-    implementation("com.squareup.okhttp3:okhttp:4.9.3")
-
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
 
-    // Dependencias do Mapa
+    // Mapa e Rota
     implementation(libs.play.services.maps)
     implementation(libs.play.services.location)
-    implementation("com.google.maps.android:android-maps-utils:2.2.3")
-    implementation("com.android.volley:volley:1.2.1")
-    implementation("androidx.appcompat:appcompat:1.4.0")
-    implementation("com.google.android.material:material:1.3.0")
-    implementation("com.google.android.gms:play-services-maps:18.0.2")
-    implementation("com.google.android.gms:play-services-location:18.0.0")
-    implementation("com.google.android.libraries.places:places:2.7.0")
-    implementation("com.google.android.gms:play-services-places:17.0.0")
-    implementation ("androidx.biometric:biometric:1.1.0")
+    implementation(libs.volley)
+    implementation("com.google.maps.android:maps-utils-ktx:3.1.0")
+    implementation("com.google.android.libraries.places:places:3.4.0")
 
-    // Animação
+    // HTTP Servidor
+    implementation("com.squareup.okhttp3:okhttp:4.12.0")
+
+    // Biometria
+    implementation("androidx.biometric:biometric:1.1.0")
+
+    // Animação e Imagem
     implementation("com.airbnb.android:lottie:6.1.0")
-
-    // Imagem
     implementation("de.hdodenhof:circleimageview:3.1.0")
 }

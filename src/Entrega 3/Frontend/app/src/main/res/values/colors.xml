@@ -5,10 +5,5 @@
     <color name="background">#121212</color>
     <color name="dark_gray">#1E1E1E</color>
     <color name="light_gray">#F2F2F2</color>
-
-
-
-
-
-
+    <color name="transparent">#00000000</color> <color name="transparent_black_50_percent">#80000000</color>
 </resources>

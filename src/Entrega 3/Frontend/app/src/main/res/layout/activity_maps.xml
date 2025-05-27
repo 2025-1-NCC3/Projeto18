@@ -1,28 +1,208 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    xmlns:android="http://schemas.android.com/apk/res/android">
-
-    <!-- Fragmento do Mapa -->
+    android:layout_height="match_parent">
 
     <fragment
         android:id="@+id/map"
         android:name="com.google.android.gms.maps.SupportMapFragment"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        tools:ignore="FragmentTagUsage" />
 
-    <Button
+    <ImageButton
+        android:id="@+id/optionButton"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentEnd="true"
+        android:layout_above="@+id/driverInfoCard"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/background_shield"
+        android:backgroundTint="#FEFCFF"
+        android:clickable="true"
+        android:elevation="4dp"
+        android:focusable="true"
+        android:padding="6dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/icon_settings"
+        android:contentDescription="Configurações" />
+
+    <ImageButton
         android:id="@+id/safetyButton"
-        android:layout_width="363dp"
-        android:layout_height="537dp"
-        android:text="NAO MUDA O ID DO BOTAOOOOOOOOO" />
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentEnd="true"
+        android:layout_above="@+id/optionButton"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/background_shield"
+        android:backgroundTint="#FEFCFF"
+        android:clickable="true"
+        android:elevation="4dp"
+        android:focusable="true"
+        android:padding="8dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/icon_shield"
+        android:contentDescription="Botão de Segurança"
+        tools:srcCompat="@drawable/icon_shield" />
 
-    <!-- Fragmento de Pesquisa ainda não funcional -->
-    <!-- <fragment
-        android:id="@+id/autocomplete_fragment"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/driverInfoCard"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:name="com.google.android.libraries.places.widget.AutocompleteSupportFragment" /> -->
+        android:layout_height="235dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/background_grey"
+        android:backgroundTint="#FEFCFF"
+        android:elevation="6dp"
+        android:layout_margin="16dp"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp">
+
+        <ImageView
+            android:id="@+id/driverProfileImage"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:contentDescription="Foto do Motorista"
+            android:elevation="8dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/user_image"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/carIcon"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="-50dp"
+            android:layout_marginTop="-45dp"
+            android:contentDescription="Ícone do Carro"
+            android:elevation="7dp"
+            android:src="@drawable/icon_car_uber_grey"
+            app:layout_constraintStart_toEndOf="@+id/driverProfileImage"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/ratingLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:elevation="9dp"
+            android:background="@drawable/background_grey_infinity_rounded"
+            android:backgroundTint="#EDEBEE"
+            app:layout_constraintStart_toStartOf="@+id/driverProfileImage"
+            app:layout_constraintEnd_toEndOf="@+id/driverProfileImage"
+            app:layout_constraintTop_toBottomOf="@+id/driverProfileImage"
+            android:layout_marginTop="-10dp"
+            android:paddingHorizontal="5dp"
+            android:paddingVertical="1dp">
+
+            <TextView
+                android:id="@+id/driverRatingText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/minimumText"
+                android:text="5.0"
+                android:textSize="11.5sp"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:src="@drawable/icon_star"
+                android:contentDescription="Estrela de avaliação"
+                android:layout_marginStart="2dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/carPlateText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ABC1234"
+            style="@style/defaultText"
+            android:textColor="#222222"
+            android:textSize="21.55sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="0dp"
+            android:gravity="end" />
+
+        <TextView
+            android:id="@+id/carModelText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="Renault Logan"
+            android:textColor="#555555"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/carPlateText"
+            android:layout_marginEnd="0dp"
+            android:gravity="end" />
+
+        <TextView
+            android:id="@+id/driverName"
+            style="@style/titleText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="85dp"
+            android:text="Antônio Álvares"
+            android:textAlignment="center"
+            android:textColor="#222222"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/driverName"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <EditText
+                android:id="@+id/observationEditText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                style="@style/defaultText"
+                android:hint="Alguma observação?"
+                android:textColorHint="#999999"
+                android:paddingStart="16dp"
+                android:gravity="center_vertical"
+                android:layout_marginEnd="16dp"
+                android:textColor="#333333"
+                android:background="@drawable/background_grey_infinity_rounded"
+                android:paddingVertical="8dp"
+                android:inputType="textCapSentences|textMultiLine"
+                android:maxLines="3"
+                android:minHeight="48dp" />
+
+            <ImageButton
+                android:id="@+id/chatIcon"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/icon_chat"
+                android:background="@drawable/background_grey_infinity_rounded"
+                android:clickable="true"
+                android:focusable="true"
+                android:contentDescription="Ícone de Chat" />
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
 </RelativeLayout>
